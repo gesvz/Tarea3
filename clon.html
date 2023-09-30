@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiClonUtp</title>
+    <link rel="stylesheet" href="wiki.css">
+</head>
+
+<body>
+    <header>
+    <div class="icono-menu "><img id="hamburger" src="./img/hamburger.png" alt="">
+        <ul class="sectMenu ul-menu">
+            <li class="menu">Menú principal</li>
+            <li><a href="">Portada</a></li>
+            <li><a href="">Portal de la comunidad</a></li>
+            <li><a href="">Actualidad</a></li>
+            <li><a href="">Cambios recientes</a></li>
+            <li><a href="">Páginas nuevas</a></li>
+            <li><a href="">Página aleatoria</a></li>
+            <li><a href="">Ayuda</a></li>
+            <li><a href="">Donaciones</a></li>
+        </ul>            
+    </div>
+    <section class="sectlogo">
+        <img src="./img/wiki1.png" alt="">
+    </section>
+   
+    <section class="sectBuscar">
+        <label for="busqueda"></label>
+        <input class="barra-busqueda" type="text" id="busqueda" placeholder="Buscar en Wikipedia"><img id="search-icon" src="img/search-icon.png" alt=""><input class="btn-busqueda"type="submit" value="Buscar">
+    </section>
+
+    <div class="right-menu" >
+        <p class="rmenu-item"><a href="#">Crear una cuenta</a></p>
+        <p class="rmenu-item"><a href="#">Acceder</a></p>
+    </div>
+    <div class="icono-menu">
+
+        <img id="threedots"src="./img/3dotsicon.png" alt="">
+        <section class="sectMenu threedotsmenu">
+
+        <ul ul-menu>
+            <li>Páginas para editores desconectados</li>
+            <li><a href="#">Contribuciones</a></li>
+            <li><a href="#">Discusión</a></li>
+        </ul>               
+    </section>
+
+    </section>
+</header>
+<br>
+
+
+<section class="sect-nuevas">
+    <h1>Páginas nuevas</h1>
+
+    <ul class="icono-menu">
+        <img src="./img/idioma.png" alt="">
+        <li class="dropdown-content"><a href="#">Abrir opciones de idioma</a></li>
+    </ul>
+</section>
+<hr>
+
+<section class="setc-herramientas icono-menu">
+    <p id="herramientas">Herramientas</p>
+
+    
+    <ul class="sectMenu ul-menu">
+        <li>Herramientas</li>
+        <li>General</li>
+        <li><a href="#">Atom</a></li>
+        <li><a href="#">Subir archivo</a></li>
+        <li><a href="#">Páginas especiales</a></li>
+        <li><a href="#">Versión para imprimir</a></li>
+        <li><a href="#">Obtener URL acortado</a></li>
+    </ul>
+</section>
+<hr>
+
+<section class="sect-ayuda">
+    <p><img src="img/incognito.png" alt=""> <a href="#">Ayuda</a></p>
+</section>
+
+<section class="sect-incog">
+    <div class="img"><img id="img/i.png" src="img/i.png" alt=""></div>
+    <div>
+        <p><span class="bold-text"><span class="fondoamarillo">Las páginas con fondo amarillo</span> aún no han sido revisados.</span>
+             Por favor, considere revisar <a class="linknodecoration bold-text" href="#">las páginas pendiente más antiguas, que se encuentren al final de la lista</a></p>
+        <p>Otras opciones: <a href="#">1 hora</a> • <a href="#">1 día</a> • <a href="#">5 días</a> • <a href="#">10
+                días</a>
+            • <a href="#">15 días</a></p>
+
+    </div>
+</section>
+<p class="centrartexto italic">Las páginas con más de un mes de antigüedad no se muestran.</p>
+<section class="sect-relleno">
+    <p>Por favor, lee <a href="#">Wikipedia: Patrulla Páginas Nuevas:</a></p>
+    <ul>
+        <li>
+            <a href="#">no muerdas a los novatos</a>: dales un tiempo antes de avisarles con plantillas.
+                Considera
+                dejarles en sus páginas de discusión la <a href="#">la plantilla de bienvenida</a> y, cuando
+                proceda,
+                la plantilla {{<a href="#">aviso borrado</a>}}.
+        </li>
+        <li>
+            <p>los artículos no deben ser marcados con <a href="#">la plantilla de borrado rápido</a> si <a
+                    href="#">no tienen contexto o contenido</a> momentos después de la creación, ya que no todos los
+                usuarios colocan toda la información en su primera edición.</p>
+        </li>
+    </ul>
+    <p><span class="bold-text">Importante</span>: Considera también revisar los espacios de nombres distintos al principal, especialmente los <a
+            href="#">anexos</a>, <a href="#">aquí</a>.</p>
+</section>
+
+<div class="centrardiv">
+<section class="pag-nueva">
+    <form action="" class="">
+    <p class="bold-text">Espacio de nombres:</p>
+
+        <label for="nombres"></label>
+        <select id="nombres">
+            <option value="principal">Principal</option>
+        </select>
+    <br>
+
+    <input type="checkbox" id="casilla">
+    <label for="casilla">Invertir selección</label>
+    <br>
+    <input type="checkbox" id="espacio">
+    <label for="espacio">Espacio de nombres asociado</label>
+
+    <p>Filtro de <a href="#">etiquetas</a>:</p>
+    <input type="text" id="filtro">
+    <select id="filtro">
+        <option value="#"></option>
+    </select>
+    <label for="filtro"></label>
+    <br>
+
+    <p>Nombre de usuario:</p>
+    <label for="nombre-usuario"></label>
+    <input type="text" id="nombre-usuario">
+    <br>
+
+    <input type="radio" id="min">
+    <label for="min">Tamaño mínimo</label>
+    <input type="radio" id="max">
+    <label for="max">Tamaño máximo: </label>
+    <input type="text" id="bytes">
+    <label for="bytes">(bytes)</label>
+    <br>
+
+    <a href="#"><button class="mostrar bold-text">Mostrar</button></button></a>
+    </form>
+    <br>
+
+    <p><a href="#">Ocultar</a> usuarios registrados. <a href="#">Ocultar</a> ediciones verificadas. <a href="#">Ocultar</a> bots. <a href="#">Mostrar</a> redirecciones</p>
+</section>
+</div>
+
+<section>
+    <p>(recientes · <a href="#">primeras</a>) Ver (50 siguientes · <a href="#">50 anteriores</a>) (<a href="#">20</a> · 50 · <a href="#">100</a> · <a href="#">250</a> · <a href="#">500</a>).</p>
+</section>
+
+
+
+<section class="sect-parrafos">
+    <ul>
+        <li>22:47 29 sep 2023 Mere Boynton (hist. · editar) [2842 bytes] NishiroK123 (discusión · contribs.)
+            (Creado al traducir la página «Mere Boynton») Etiquetas: Traducción de contenido Traducción de
+            contenido, versión 2</li>
+        <li>22:41 29 sep 2023 Caso postdirectivo (hist. · editar) [1106 bytes] Elcasudo (discusión ·
+            contribs.) (Página creada con «El '''caso postdirectivo''' es un caso gramatical presente en el
+            idioma lezgiano, que indica hacia algo, aunque es usado ocasionalmente. El sufijo para este caso es:
+            -''хъди'' (-''qhdi'')<ref name=":0">{{cita
+                web|url=http://www.peterlin.pl/lezgi/casesystem.html|fechaacceso= 29/9/2023|título=The case
+                system of Lezgi|idioma=en|sitioweb=peterlin}}</ref> Ejemplo * кивалихъди зверна ** za
+            k'waliqhdi zwerna ** Corr…») Etiquetas: Edición desde móvil Edición vía web móvil Edición móvil
+            avanzada</li>
+        <li>22:41 29 sep 2023 Manuel Tovar Conde (hist. · editar) [2510 bytes] Strakhov (discusión · contribs.)
+            (............)</li>
+        <li>22:29 29 sep 2023 Valle Morín (hist. · editar) [2294 bytes] Rjgalindo (discusión · contribs.)
+            (Página creada con «{{Ficha de entidad subnacional |nombre original = San Casimiro de Güiripa
+            |nombre completo = San Casimiro |país = Venezuela |unidad = Localidad |tipo_superior_1 = Estado
+            |superior_1 = {{VEN|D}} |tipo_superior_2 = Municipio |superior_2 = 20px|borde|link= San Casimiro
+            |bandera…») (Etiqueta: editor de código 2017)</li>
+        <li>22:29 29 sep 2023 Valle Morín (hist. · editar) [2294 bytes] Rjgalindo (discusión · contribs.)
+            (Página creada con «{{Ficha de entidad subnacional |nombre original = San Casimiro de Güiripa
+            |nombre completo = San Casimiro |país = Venezuela |unidad = Localidad |tipo_superior_1 = Estado
+            |superior_1 = {{VEN|D}} |tipo_superior_2 = Municipio |superior_2 = 20px|borde|link= San Casimiro
+            |bandera…») Etiqueta: editor de código 2017</li>
+        <li>22:22 29 sep 2023 Caso adirectivo (hist. · editar) [1167 bytes] Elcasudo (discusión · contribs.)
+            (Página creada con «El '''caso adirectivo''' Es un caso gramatical que aparece en el idioma lezgiano
+            que originalmente se usaba para decir en dirección cercana a algo. Ahora rara vez se utiliza como se
+            utilizaba antes, Su sufijo es: -''вди'' (-''vdi'').<ref name=":0">{{cita
+                web|url=http://www.peterlin.pl/lezgi/casesystem.html|fechaacceso= 29/9/2023|título=The case
+                system of Lezgi|idioma=en|sitioweb=peterlin}}</ref> En la actualidad este Caso (gramát…»)
+            (Etiquetas: Edición desde móvil, Edición vía web móvil, Edición móvil avanzada)</li>
+        <li>22:21 29 sep 2023 Hans Hedtoft (hist. · editar) [1854 bytes] Rastrojo (discusión · contribs.) (de
+            en:Hans Hedtoft, versión https://en.wikipedia.org/w/index.php?title=Hans_Hedtoft&oldid=1168642268)
+        </li>
+        <li>22:15 29 sep 2023 Partido Laborista Progresista (Estados Unidos) (hist. · editar) [5829 bytes]
+            Tetsou TheIronman (discusión · contribs.) (Creado al traducir la página «Progressive Labor Party
+            (United States)») (Etiquetas: Traducción de contenido, Traducción de contenido, versión 2)</li>
+        <li>22:11 29 sep 2023 Marac (Trinidad y Tobago) (hist. · editar) [2674 bytes] Aitorembe (discusión ·
+            contribs.) (Creación de página de localidad de Trinidad y Tobago.)</li>
+        <li>22:08 29 sep 2023 Malgretoute (hist. · editar) [2462 bytes] Aitorembe (discusión · contribs.)
+            (Creación de página de localidad de Trinidad y Tobago.)</li>
+        <li>22:07 29 sep 2023 Viggo Kampmann (hist. · editar) [2598 bytes] Rastrojo (discusión · contribs.)
+            (de en:Viggo Kampmann, versión
+            https://en.wikipedia.org/w/index.php?title=Viggo_Kampmann&oldid=1157376456)</li>
+        <li>22:04 29 sep 2023 Lothian (Trinidad y Tobago) (hist. · editar) [2320 bytes] Aitorembe (discusión
+            · contribs.) (Creación de página de localidad de Trinidad y Tobago.)</li>
+        <li>22:01 29 sep 2023 Lengua Village-Barrackpore (hist. · editar) [2527 bytes] Aitorembe (discusión ·
+            contribs.) (Creación de página de localidad de Trinidad y Tobago.)</li>
+        <li>21:58 29 sep 2023 La Savanne (Princes Town) (hist. · editar) [2322 bytes] Aitorembe (discusión ·
+            contribs.) (Creación de página de localidad de Trinidad y Tobago.)</li>
+        <li>21:56 29 sep 2023 La Ruffin (hist. · editar) [2320 bytes] Aitorembe (discusión · contribs.) (La
+            parroquia de Riós en español es denominada Trepa, mientras que la del municipio de Villardevós es
+            denominada con el exónimo Fumaces y Trepa, por lo que no hay nada que desambiguar...)</li>
+        <li>21:56 29 sep 2023 Daniela Giordano (hist. · editar) [4076 bytes] Teodoromix (discusión ·
+            contribs.) (Creación artículo)</li>
+        <li>21:52 29 sep 2023 La Lune (hist. · editar) [2333 bytes] Aitorembe (discusión · contribs.)
+            (Creación de página de localidad de Trinidad y Tobago.)</li>
+        <li>21:50 29 sep 2023 Radio La Mexicana (hist. · editar) [5728 bytes] 186.11.22.106 (discusión)
+            (Página creada con «== Expansión == Al momento de su lanzamiento en junio de 2023 la Radio ya
+            contaba con frecuencias en La Ligua, Casablanca, Melipilla, San Fernando, Constitución, Parral,
+            Chanco, Futrono, Fresia, Ancud y Coyhaique. Así ha sido la expansión desde su marcha blanca y
+            lanzamiento en junio de 2023: * El 5 de junio de 2023 llega a La Ligua a través de la frecuencia
+            90.9 MHz, a Casablanca a través de la frecuencia 96.9 MHz, a Melipilla a…») (Etiquetas: Edición
+            desde
+            móvil, Edición vía web móvil, posible problema, Enlaces a desambiguaciones)</li>
+        <li>21:48 29 sep 2023 Kumar Village (hist. · editar) [2286 bytes] Aitorembe (discusión · contribs.)
+            (Creación de página de localidad de Trinidad y Tobago.)</li>
+        <li>21:43 29 sep 2023 Jordan Village (hist. · editar) [2383 bytes] Aitorembe (discusión · contribs.)
+            (Creación de página de localidad de Trinidad y Tobago.)</li>
+        <li>21:41 29 sep 2023 Clasificación para los Juegos Olímpicos de Roma 1960 (hist. · editar) [6233
+            bytes] Chile2011 (discusión · contribs.) (Puse la repartición de los cupos y una referencia)
+            (Etiquetas: Edición desde móvil, Edición vía web móvil, sin categorizar, Edición visual)</li>
+        <li>21:38 29 sep 2023 Canto budista (hist. · editar) [8796 bytes] Dhammadharo (discusión · contribs.)
+            (Creado al traducir la página «Buddhist chant») (Etiquetas: Traducción de contenido, Traducción de
+            contenido, versión 2)</li>
+        <li>21:31 29 sep 2023 Chorros de Cura (hist. · editar) [2937 bytes] Rjgalindo (discusión · contribs.)
+            (Página creada con «{{Ficha de cuerpo de agua | nombre = Chorros de Cura | nombre_local = | imagen =
+            Chorros de cura cascada guariquito.jpg | pie = Vista angosta de la Cascada | país =
+            {{bandera2|Venezuela}} | división_administrativa_tipo = Municipio | división_administrativa =
+            Casimiro | subdivisión_administrativa_tipo = Estado | subdivisión_administrativa = Aragua |
+            población_cercana = Valle Morín | cuenca_hidrográfica = Río…») (Etiqueta: editor de código 2017)
+        </li>
+        <li>21:31 29 sep 2023 Qubba Almorávide (hist. · editar) [7492 bytes] Dorieo (discusión · contribs.)
+            (Página creada con «{{Ficha de monumento | nombre = Qubba Almorávide | nombre_local =
+            {{lang-ar|القبة المرابطية}} | imagen = Almoravid Qubba IMG 5629.jpg | pie_imagen = | catalogación =
+            <!-- banderolas de color: úsese UNESCO o BIC --> | catalogación2 = | catalogación3 = | catalogación4
+            = <!-- Localización --> | país = {{MAR}} | tipo_división_administrativa = | división_administrativa
+            = | tipo_subdivisión_administrativa = | subdivisión_administrativa = |…»)
+        </li>
+        <li>21:30 29 sep 2023 Decreto 6323 (hist. · editar) [7303 bytes] Borboteo (discusión · contribs.)
+            (creación de artículo)</li>
+    </ul>
+    </p>
+</section>
+
+<hr>
+<div class="centrardiv">
+<footer>
+    <div>
+    <a href="">Política de privacidad</a>
+    <a href="">Acerca de Wikipedia</a>
+    <a href="">Limitación de responsabilidad</a>
+    <a href="">Código de conducta</a>
+    <a href="">Versión para móviles</a>
+    <a href="">Desarrolladores</a>
+    <a href="">Estadísticas</a>
+    <a href="">Declaraciones de cookies</a>
+   </div>
+   <div class="footer-images-container">
+        <img src="img/wikimedia.png" alt="">
+        <img src="img/powered.png" alt="">
+    </div>
+</footer>
+</div>
+
+</body>
+</html>
